@@ -1,5 +1,5 @@
 
-var PLUGIN_NAME = 'logseq-theme-template'
+var PLUGIN_NAME = 'logseq-theme-classic-dark-theme-pack'
 
 module.exports = {
     branches: ['main'],

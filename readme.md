@@ -1,12 +1,12 @@
-# Logseq Theme: Template Sample
+# Logseq Theme: Classic dark theme pack
 
 - Development stage 👷🚧
 
 > This plugin still has room for improvement. Please let me know if you encounter any issues or have any ideas for enhancement.
 
-[![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-theme-template)](https://github.com/YU000jp/logseq-theme-template/releases)
-[![License](https://img.shields.io/github/license/YU000jp/logseq-theme-template?color=blue)](https://github.com/YU000jp/logseq-theme-template/LICENSE)
-[![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-theme-template/total.svg)](https://github.com/YU000jp/logseq-theme-template/releases)
+[![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-theme-classic-dark-theme-pack)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
+[![License](https://img.shields.io/github/license/YU000jp/logseq-theme-classic-dark-theme-pack?color=blue)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/LICENSE)
+[![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-theme-classic-dark-theme-pack/total.svg)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
 <!-- Published 2023 -->
 
 ---
@@ -21,7 +21,7 @@
 
 - Press [`---`] on the top right toolbar to open [`Plugins`]
 - Select [`Theme`] and [`Marketplace`]
-- Type `WORD` in the search field, select it from the search results and install
+- Type `Classic` in the search field, select it from the search results and install
 
 ### Usage
 

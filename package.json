@@ -1,12 +1,12 @@
 {
-    "name": "logseq-theme-template",
-    "description": "A template for Logseq theme for use Settings Schema",
-    "repository": "https://github.com/YU000jp/logseq-theme-template.git",
+    "name": "logseq-theme-classic-dark-theme-pack",
+    "description": "A theme pack for Logseq",
+    "repository": "https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack.git",
     "author": "YU000jp",
     "license": "MIT",
     "logseq": {
-        "id": "theme-template",
-        "title": "Theme Template",
+        "id": "classic-dark-theme-pack",
+        "title": "Classic dark theme pack",
         "icon": "./icon.svg",
         "main": "./dist/index.html",
         "themes": [
@@ -35,8 +35,8 @@
                 "mode": "dark"
             },
             {
-                "name": "White Dark Theme",
-                "url": "./src/css/white.css",
+                "name": "Red Dark Theme",
+                "url": "./src/css/red.css",
                 "description": "Simple dark theme",
                 "mode": "dark"
             }

@@ -1,23 +1,30 @@
 .dark-theme,
 html[data-theme=dark] {
-    --ls-primary-background-color: #192216;
-    --ls-secondary-background-color: #162217f2;
-    --ls-tertiary-background-color: #323232;
+    --ls-primary-background-color: #181c16;
+    --ls-secondary-background-color: #0b2c0dba;
+    --ls-tertiary-background-color: #182e25;
     --ls-quaternary-background-color: #033c13bf;
-    --ls-table-tr-even-background-color: #044014db;
+    --ls-table-tr-even-background-color: var(--ls-quaternary-background-color);
     --ls-block-ref-link-text-color: var(--ls-scrollbar-foreground-color);
-    --ls-guideline-color: #216032;
+    --ls-guideline-color: #21603263;
     --ls-selection-background-color: #5da7914d;
     --ls-active-primary-color: #49b14bcc;
     --ls-active-secondary-color: #efe8fb;
-    --ls-link-text-color: #42ed35c2;
-    --ls-primary-text-color: #c4f7e7ab;
+    --ls-link-text-color: #9bff92de;
+    --ls-primary-text-color: #c4f7e7e0;
     --ls-secondary-text-color: #5fbd89;
-    --ls-block-bullet-border-color: var(--ls-link-text-color);
-    --ls-block-bullet-color: var(--ls-link-text-color);
-    --ls-scrollbar-foreground-color: #1b5a33;
+    --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
+    --ls-block-bullet-color: #f0f8ff96;
+    --ls-scrollbar-foreground-color: #156433e6;
     --ls-border-color: var(--ls-guideline-color);
     --ls-secondary-border-color: var(--ls-selection-background-color);
     --ls-page-inline-code-bg-color: #283a2bc4;
-    --ls-page-checkbox-color: #14a90991;
+    --ls-page-checkbox-color: #2d9f42;
+}
+.bg-indigo-600 {
+    background-color: var(--ls-page-checkbox-color);
+}
+
+.bg-indigo-600:hover {
+    background-color: var(--ls-selection-background-color);
 }

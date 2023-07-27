@@ -10,23 +10,19 @@ div#root div:is(.ui__modal-panel,
     .menu-links-outer,
     .menu-links-wrapper) {
     border: 2px solid var(--ls-border-color);
-    box-shadow: 0 0 10px var(--ls-border-color);
+    box-shadow: 0 0 4px var(--ls-border-color);
 }
+
 body[data-page=home] div#main-content-container {
     z-index: 0;
 }
-#custom-context-menu {
+
+#custom-context-menu,
+div.dropdown-wrapper {
     z-index: var(--ls-z-index-level-5);
 }
+
 div#root input.form-checkbox:checked {
-    background-color: var(--ls-selection-background-color);
-}
-
-.bg-indigo-600 {
-    background-color: var(--ls-active-primary-color);
-}
-
-.bg-indigo-600:hover {
     background-color: var(--ls-selection-background-color);
 }
 
@@ -38,7 +34,8 @@ div#root input.form-checkbox:checked {
 }
 
 html:not(.is-native-android) {
-    font-family:  unset!important; /* var(--ls-font-family) */
+    font-family: unset !important;
+    /* var(--ls-font-family) */
 }
 
 div.left-sidebar-inner div.nav-content-item div.header {
@@ -64,6 +61,7 @@ div[label="plugin-settings-modal"] div.ui__modal-panel {
 div[label="plugin-settings-modal"] div.ui__modal-panel div.cp__settings-inner aside {
     height: 100%;
 }
+
 div[label="plugin-settings-modal"] div.ui__modal-panel div.cp__settings-inner aside ul li {
     padding: 11px;
 }

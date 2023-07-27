@@ -1,9 +1,9 @@
 .dark-theme,
 html[data-theme=dark] {
     --ls-primary-background-color: #1e1724;
-    --ls-secondary-background-color: #2a1f3aeb;
+    --ls-secondary-background-color: #2f273ceb;
     --ls-tertiary-background-color: #523962b8;
-    --ls-quaternary-background-color: #3e2258c7;
+    --ls-quaternary-background-color: #5f3883c7;
     --ls-table-tr-even-background-color: #2d005eb5;
     --ls-block-ref-link-text-color: var(--ls-scrollbar-foreground-color);
     --ls-guideline-color: #653b93b5;
@@ -14,10 +14,17 @@ html[data-theme=dark] {
     --ls-primary-text-color: #f6eaff;
     --ls-secondary-text-color: #dcbffb;
     --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
-    --ls-block-bullet-color: var(--ls-quaternary-background-color);
+    --ls-block-bullet-color: #f0f8ff96;
     --ls-scrollbar-foreground-color: #65317c;
     --ls-border-color: var(--ls-guideline-color);
     --ls-secondary-border-color: var(--ls-selection-background-color);
     --ls-page-inline-code-bg-color: #312138;
     --ls-page-checkbox-color: var(--ls-link-text-color);
+}
+.bg-indigo-600 {
+    background-color: var(--ls-page-checkbox-color);
+}
+
+.bg-indigo-600:hover {
+    background-color: var(--ls-selection-background-color);
 }
