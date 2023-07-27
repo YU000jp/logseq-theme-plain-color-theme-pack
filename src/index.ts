@@ -22,6 +22,7 @@ const main = () => {
   if (logseq.settings!.removeMenuGraphView === true) removeMenuGraphView();
   if (logseq.settings!.taskColor === true) taskColor();
   if (logseq.settings!.taskBold === true) taskBold();
+  if (logseq.settings!.fontFamilyUnset === true) fontFamilyUnset();
 
   logseq.provideStyle({ key: "common", style: fileCommon });
 
@@ -36,6 +37,12 @@ const main = () => {
       if (oldSet.removeMenuGraphView === true && newSet.removeMenuGraphView !== true) {
         removeProvideStyle(keyRemoveMenuGraphView);
       }
+    if (oldSet.fontFamilyUnset !== true && newSet.fontFamilyUnset === true) {
+      fontFamilyUnset();
+    }
+    else if (oldSet.fontFamilyUnset === true && newSet.fontFamilyUnset !== true) {
+      removeProvideStyle(keyFontFamilyUnset);
+    }
   });
 
 };/* end_main */
@@ -59,6 +66,16 @@ const removeMenuGraphView = () => logseq.provideStyle({
   style: String.raw`
 div#left-sidebar div.graph-view-nav{
   display:none;
+}
+`  });
+
+const keyFontFamilyUnset = 'fontFamilyUnset';
+const fontFamilyUnset = () => logseq.provideStyle({
+  key: keyFontFamilyUnset,
+  style: String.raw`
+html:not(.is-native-android) {
+  font-family: unset !important;
+  /* var(--ls-font-family) */
 }
 `  });
 
@@ -95,6 +112,13 @@ const settingsTemplate: SettingSchemaDesc[] = [
     type: "boolean",
     default: false,
     description: "",
+  },
+  {
+    key: "fontFamilyUnset",
+    title: "Unset `font-family` in `html` For fast font loading",
+    type: "boolean",
+    default: true,
+    description: "default: true",
   },
 ];
 

@@ -38,11 +38,6 @@ div#root input.form-checkbox:checked {
     border-color: var(--ls-active-secondary-color);
 }
 
-html:not(.is-native-android) {
-    font-family: unset !important;
-    /* var(--ls-font-family) */
-}
-
 div.left-sidebar-inner div.nav-content-item div.header {
     margin-left: -0.8em;
     margin-top: 1em;
