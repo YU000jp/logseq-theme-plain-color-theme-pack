@@ -4,7 +4,7 @@ html[data-theme=dark] {
     --ls-secondary-background-color: #0b2c0df7;
     --ls-tertiary-background-color: #182e25;
     --ls-quaternary-background-color: #2a7a40e3;
-    --ls-table-tr-even-background-color: var(--ls-quaternary-background-color);
+    --ls-table-tr-even-background-color: #184e278c;
     --ls-block-ref-link-text-color: var(--ls-scrollbar-foreground-color);
     --ls-guideline-color: #249141a8;
     --ls-selection-background-color: #0e7e0478;
