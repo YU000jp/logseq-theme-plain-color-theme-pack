@@ -54,7 +54,7 @@
 - Remove 'Graph View' from the left sidebar menu
   - `true`
   - `false` default
-- Unset `font-family` in `html` For fast font loading
+- Unset 'font-family' in 'html' For fast font loading
   - `true` default
   - `false`
 
