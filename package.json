@@ -11,14 +11,14 @@
         "main": "./dist/index.html",
         "themes": [
             {
-                "name": "Navy Dark Theme",
-                "url": "./src/css/navy.css",
+                "name": "Steel blue Dark Theme",
+                "url": "./src/css/blue.css",
                 "description": "Simple dark theme",
                 "mode": "dark"
             },
             {
-                "name": "Orange Dark Theme",
-                "url": "./src/css/orange.css",
+                "name": "Gold Dark Theme",
+                "url": "./src/css/gold.css",
                 "description": "Simple dark theme",
                 "mode": "dark"
             },
@@ -29,14 +29,14 @@
                 "mode": "dark"
             },
             {
-                "name": "Purple Dark Theme",
-                "url": "./src/css/purple.css",
+                "name": "Violet Dark Theme",
+                "url": "./src/css/violet.css",
                 "description": "Simple dark theme",
                 "mode": "dark"
             },
             {
-                "name": "Red Dark Theme",
-                "url": "./src/css/red.css",
+                "name": "Brown Dark Theme",
+                "url": "./src/css/brown.css",
                 "description": "Simple dark theme",
                 "mode": "dark"
             }

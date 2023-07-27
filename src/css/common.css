@@ -2,8 +2,13 @@ div#root input[type="checkbox"].form-checkbox {
     border-radius: 3px;
 }
 
+div#root div.block-content :is(h1, h2, h3, h4, h5, h6),
+.rounded {
+    border-radius: 0.4em;
+}
+
 div#root div.block-content :is(h1, h2, h3, h4, h5, h6) {
-    border-radius: 3px;
+    padding-left: 0.5em;
 }
 
 div#root div:is(.ui__modal-panel,
@@ -55,11 +60,12 @@ html[data-theme=dark] {
 }
 
 div[label="plugin-settings-modal"] div.ui__modal-panel {
-    min-height: 75vh;
+    min-height: 60vh;
 }
 
 div[label="plugin-settings-modal"] div.ui__modal-panel div.cp__settings-inner aside {
     height: 100%;
+    margin-bottom: 3em;
 }
 
 div[label="plugin-settings-modal"] div.ui__modal-panel div.cp__settings-inner aside ul li {

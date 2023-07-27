@@ -21,3 +21,10 @@ html[data-theme=dark] {
     --ls-page-inline-code-bg-color: #382121;
     --ls-page-checkbox-color: var(--ls-link-text-color);
 }
+.bg-indigo-600 {
+    background-color: var(--ls-guideline-color);
+}
+
+.bg-indigo-600:hover {
+    background-color: var(--ls-selection-background-color);
+}

@@ -15,14 +15,14 @@ html[data-theme=dark] {
     --ls-secondary-text-color: #ffaa5a;
     --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
     --ls-block-bullet-color: #f0f8ff96;
-    --ls-scrollbar-foreground-color: #443720;
+    --ls-scrollbar-foreground-color: #ffd70078;
     --ls-border-color: var(--ls-guideline-color);
     --ls-secondary-border-color: var(--ls-selection-background-color);
     --ls-page-inline-code-bg-color: #42341bc9;
     --ls-page-checkbox-color: #a57b2df7;
 }
 .bg-indigo-600 {
-    background-color: var(--ls-page-checkbox-color);
+    background-color: var(--ls-guideline-color);
 }
 
 .bg-indigo-600:hover {
