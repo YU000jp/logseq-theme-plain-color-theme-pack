@@ -1,0 +1,15 @@
+.dark-theme,
+html[data-theme=dark] {
+    --ls-primary-background-color: #111a2ae8;
+    --ls-secondary-background-color: #061e42f2;
+    --ls-tertiary-background-color: #323232;
+    --ls-quaternary-background-color: #064250cf;
+    --ls-table-tr-even-background-color: ##05425e66;
+    --ls-guideline-color: #375a85;
+    --ls-selection-background-color: #21A4E16E;
+    --ls-active-primary-color: #2db4ddcf;
+    --ls-active-secondary-color: #efe8fb;
+    --ls-link-text-color: #62c5ebd9;
+    --ls-primary-text-color: #e4f7f9;
+    --ls-secondary-text-color: #4fa6ff;
+}

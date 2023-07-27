@@ -1,0 +1,69 @@
+div#root input[type="checkbox"].form-checkbox {
+    border-radius: 3px;
+}
+
+div#root div.block-content :is(h1, h2, h3, h4, h5, h6) {
+    border-radius: 3px;
+}
+
+div#root div:is(.ui__modal-panel,
+    .menu-links-outer,
+    .menu-links-wrapper) {
+    border: 2px solid var(--ls-border-color);
+    box-shadow: 0 0 10px var(--ls-border-color);
+}
+body[data-page=home] div#main-content-container {
+    z-index: 0;
+}
+#custom-context-menu {
+    z-index: var(--ls-z-index-level-5);
+}
+div#root input.form-checkbox:checked {
+    background-color: var(--ls-selection-background-color);
+}
+
+.bg-indigo-600 {
+    background-color: var(--ls-active-primary-color);
+}
+
+.bg-indigo-600:hover {
+    background-color: var(--ls-selection-background-color);
+}
+
+.form-input:focus,
+.form-multiselect:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: var(--ls-active-secondary-color);
+}
+
+html:not(.is-native-android) {
+    font-family:  unset!important; /* var(--ls-font-family) */
+}
+
+div.left-sidebar-inner div.nav-content-item div.header {
+    margin-left: -0.8em;
+    margin-top: 1em;
+    background-color: var(--ls-tertiary-background-color);
+}
+
+div#left-sidebar div.favorites:not(:has(li.favorite-item)),
+div#left-sidebar div.recent:not(:has(li.recent-item)) {
+    display: none;
+}
+
+.dark-theme,
+html[data-theme=dark] {
+    --ls-page-properties-background-color: #3e393d57;
+}
+
+div[label="plugin-settings-modal"] div.ui__modal-panel {
+    min-height: 75vh;
+}
+
+div[label="plugin-settings-modal"] div.ui__modal-panel div.cp__settings-inner aside {
+    height: 100%;
+}
+div[label="plugin-settings-modal"] div.ui__modal-panel div.cp__settings-inner aside ul li {
+    padding: 11px;
+}
