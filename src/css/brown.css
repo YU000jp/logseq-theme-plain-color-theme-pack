@@ -10,7 +10,7 @@ html[data-theme=dark] {
     --ls-selection-background-color: #e1212163;
     --ls-active-primary-color: #812a2aeb;
     --ls-active-secondary-color: #fbe8e8;
-    --ls-link-text-color: #f3a6a6d9;
+    --ls-link-text-color: #edceced9;
     --ls-primary-text-color: #ffeaea;
     --ls-secondary-text-color: #fbbfbf;
     --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
