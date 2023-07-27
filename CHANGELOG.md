@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.0.0...v1.1.0) (2023-07-27)
+
+
+### Features
+
+* **Add to plugin settings:** `Unset `font-family` in `html` For fast font loading` ([a0e6688](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/a0e6688fc73fcf8e9d7167df8a31023704f330df))
+
 # 1.0.0 (2023-07-27)
 
 
