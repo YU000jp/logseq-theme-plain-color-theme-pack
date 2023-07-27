@@ -1,8 +1,8 @@
 # Logseq Theme: Classic dark theme pack
 
-- Development stage 👷🚧
+- A pack featuring color variations based on Logseq's original design theme.
 
-> This plugin still has room for improvement. Please let me know if you encounter any issues or have any ideas for enhancement.
+- Development stage 👷🚧
 
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-theme-classic-dark-theme-pack)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
 [![License](https://img.shields.io/github/license/YU000jp/logseq-theme-classic-dark-theme-pack?color=blue)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/LICENSE)
@@ -45,9 +45,18 @@
 
 #### Plugin Settings
 
+- Enable task marker color
+  - `true`
+  - `false` default
+- Enable Bold task marker
+  - `true`
+  - `false` default
 - Remove 'Graph View' from the left sidebar menu
   - `true`
   - `false` default
+- Unset `font-family` in `html` For fast font loading
+  - `true` default
+  - `false`
 
 ---
 
@@ -63,8 +72,7 @@
 
 ### Icon
 
-- [icooon-mono.com](https://icooon-mono.com/)
-
+- [icooon-mono.com](https://icooon-mono.com/11223-%e5%a4%9c%e7%a9%ba%e3%81%ae%e3%83%95%e3%83%aa%e3%83%bc%e3%82%a2%e3%82%a4%e3%82%b3%e3%83%b3/)
 ---
 
 <a href="https://www.buymeacoffee.com/yu000japan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="🍌Buy Me A Coffee" style="height: 42px;width: 152px" ></a>
