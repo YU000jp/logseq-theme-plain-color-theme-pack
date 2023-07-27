@@ -15,15 +15,15 @@ div#root div:is(.ui__modal-panel,
     .menu-links-outer,
     .menu-links-wrapper) {
     border: 2px solid var(--ls-border-color);
-    box-shadow: 0 0 4px var(--ls-border-color);
+    box-shadow: 0 0 7px var(--ls-border-color);
 }
 
-body[data-page=home] div#main-content-container {
+body[data-page=home] div#root div#main-content-container {
     z-index: 0;
 }
 
-#custom-context-menu,
-div.dropdown-wrapper {
+div#root div#custom-context-menu,
+div#root div.dropdown-wrapper {
     z-index: var(--ls-z-index-level-5);
 }
 
