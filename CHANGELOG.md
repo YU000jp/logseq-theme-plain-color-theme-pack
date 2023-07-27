@@ -1,3 +1,17 @@
+## [1.1.2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.1.1...v1.1.2) (2023-07-27)
+
+
+### Bug Fixes
+
+* **Blue dark theme:** Change link text color ([8632bcf](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/8632bcfbdbbad4f00860dfe3716fda6f7509820d))
+* **Brown dark theme:** Change link text color ([6daa8fc](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/6daa8fcc53b9b3fd52194400844bbea8c6812cfd))
+* **bug:** dropdown menu z-index ([40a74f6](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/40a74f6b281d2f44f0e23d45d3554c4886835c64))
+* **Gold dark theme:** Change link text color ([3f7e368](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/3f7e368cfa3966fda09205b730ea29f3f0eba6df))
+* **Green dark theme:** Change link text color ([aa2ccbe](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/aa2ccbeacf570298b752959a30c16b8d86a7fb16))
+* **Green dark theme:** Change link text color ([29f93e4](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/29f93e4024edf35766e964c268c71ad3d5e7e1ee))
+* **Green dark theme:** Change table tr even background color ([95118d9](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/95118d9a4551b93766f3decc4d4231e1a021f44a))
+* **Violet dark theme:** Change link text color ([58e40b2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/58e40b2c2368a9075f8c60c51ef1280dfa219659))
+
 ## [1.1.1](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.1.0...v1.1.1) (2023-07-27)
 
 
