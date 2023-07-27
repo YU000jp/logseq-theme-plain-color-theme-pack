@@ -54,7 +54,7 @@
 - Remove 'Graph View' from the left sidebar menu
   - `true`
   - `false` default
-- Unset `font-family` in `html` For fast font loading
+- Unset 'font-family' in 'html' For fast font loading
   - `true` default
   - `false`
 
@@ -62,7 +62,7 @@
 
 ## Showcase / Questions / Ideas / Help
 
-> Go to the [discussion](./discussions) tab to ask and find this kind of things.
+> Go to the [discussion](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/discussions) tab to ask and find this kind of things.
 
 ## Author
 
