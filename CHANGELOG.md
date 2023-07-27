@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.1.0...v1.1.1) (2023-07-27)
+
+
+### Bug Fixes
+
+* **Add:** Theme description ([513f0ca](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/513f0ca65b727d5fc4b803f7e92fdcaf9d24dc84))
+
 # [1.1.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.0.0...v1.1.0) (2023-07-27)
 
 

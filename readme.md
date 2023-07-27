@@ -2,8 +2,6 @@
 
 - A pack featuring color variations based on Logseq's original design theme.
 
-- Development stage 👷🚧
-
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-theme-classic-dark-theme-pack)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
 [![License](https://img.shields.io/github/license/YU000jp/logseq-theme-classic-dark-theme-pack?color=blue)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-theme-classic-dark-theme-pack/total.svg)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
@@ -35,11 +33,13 @@
 
 ## Getting Started
 
-### Install from Logseq Marketplace (Coming👷🚧)
+### Install from Logseq Marketplace
 
 - Press [`---`] on the top right toolbar to open [`Plugins`]
 - Select [`Marketplace`] and [`Theme`]
 - Type `Classic` in the search field, select it from the search results and install
+
+  ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/388034c9-67f0-45aa-95ef-81419e44b2eb)
 
 ### Usage
 
