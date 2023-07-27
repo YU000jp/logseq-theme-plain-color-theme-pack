@@ -41,6 +41,8 @@
 - Select [`Marketplace`] and [`Theme`]
 - Type `Classic` in the search field, select it from the search results and install
 
+  ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/388034c9-67f0-45aa-95ef-81419e44b2eb)
+
 ### Usage
 
 #### Plugin Settings
