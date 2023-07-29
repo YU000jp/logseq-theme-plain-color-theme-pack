@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.0...v1.2.1) (2023-07-29)
+
+
+### Bug Fixes
+
+* **bug:** IF theme mode is light ([89cb32e](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/89cb32e9dd4ddf299abad87a9f5c752e25e3083e))
+* Change default setting ([f0dc446](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/f0dc4469445f01f319bcb34ae56726f0d91a109d))
+
 # [1.2.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.1.2...v1.2.0) (2023-07-29)
 
 
