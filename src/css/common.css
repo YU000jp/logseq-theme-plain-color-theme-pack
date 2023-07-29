@@ -66,3 +66,6 @@ div[label="plugin-settings-modal"] div.ui__modal-panel div.cp__settings-inner as
 div[label="plugin-settings-modal"] div.ui__modal-panel div.cp__settings-inner aside ul li {
     padding: 11px;
 }
+div#root main div.ui__modal-overlay div {
+    opacity: .4;
+}
