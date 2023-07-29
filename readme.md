@@ -57,7 +57,20 @@
 - Unset 'font-family' in 'html' For fast font loading
   - `true` default
   - `false`
-
+- left sidebar menu, CSS: Height [#2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/issues/2)
+  - `true` default
+  - `false`
+- left sidebar menu, CSS: justify-content [#2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/issues/2)
+  - `unset` default
+  - `space-evenly`
+  - `center`
+  - `space-around`
+- left sidebar menu, Unset background color [#2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/issues/2)
+  - `Theme color` default
+  - `unset`: primary background color)
+  - `black`
+  - `navy`
+  - `#2e2930`: dark purple
 ---
 
 ## Showcase / Questions / Ideas / Help
