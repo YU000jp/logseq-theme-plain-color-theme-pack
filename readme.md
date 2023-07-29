@@ -61,8 +61,8 @@
   - `true` default
   - `false`
 - left sidebar menu, CSS: justify-content [#2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/issues/2)
-  - `unset` default
-  - `space-evenly`
+  - `unset`
+  - `space-evenly` default
   - `center`
   - `space-around`
 - left sidebar menu, Unset background color [#2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/issues/2)

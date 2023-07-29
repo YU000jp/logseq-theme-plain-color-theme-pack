@@ -184,15 +184,15 @@ const settingsTemplate: SettingSchemaDesc[] = [
     key: keyLeftSidebarMenuJustifyContent,
     title: "left sidebar menu, CSS: justify-content",
     type: "enum",
-    enumChoices: ["unset", "space-evenly", "center", "space-around"],
-    default: "unset",
-    description: "default: unset",
+    enumChoices: ["unset", "space-evenly", "center", "space-around",],
+    default: "space-evenly",
+    description: "default: space-evenly",
   },
   {
     key: keyLeftSidebarBackground,
     title: "left sidebar menu, Unset background color",
     type: "enum",
-    enumChoices: ["Theme color", "unset", "black","navy","#2e2930"],
+    enumChoices: ["Theme color", "black", "navy", "#2e2930", "unset",],
     default: "Theme color",
     description: `default: Theme color
     unset: primary background color)
