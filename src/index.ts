@@ -1,7 +1,7 @@
 import '@logseq/libs'; //https://plugins-doc.logseq.com/
 import { LSPluginBaseInfo, SettingSchemaDesc, } from '@logseq/libs/dist/LSPlugin.user';
-//import { setup as l10nSetup, t } from "logseq-l10n"; //https://github.com/sethyuan/logseq-l10n
-//import ja from "./translations/ja.json";
+// import { setup as l10nSetup, t } from "logseq-l10n"; //https://github.com/sethyuan/logseq-l10n
+// import ja from "./translations/ja.json";
 import fileTaskColor from './css/taskColor.css?inline';
 import fileTaskBold from './css/taskBold.css?inline';
 import fileCommon from './css/common.css?inline';
@@ -12,9 +12,9 @@ const main = () => {
   //   try {
   //     await l10nSetup({ builtinTranslations: { ja } });
   //   } finally {
-  /* user settings */
-  logseq.useSettingsSchema(settingsTemplate);
-  if (!logseq.settings) setTimeout(() => logseq.showSettingsUI(), 300);
+      /* user settings */
+      logseq.useSettingsSchema(settingsTemplate);
+      if (!logseq.settings) setTimeout(() => logseq.showSettingsUI(), 300);
   //   }
   // })();
 
@@ -126,7 +126,7 @@ const leftSidebarMenuBackground = (value: string) => {
   if (value !== "Theme color") logseq.provideStyle({
     key: keyLeftSidebarBackground,
     style: String.raw`
-  div#root div#left-sidebar div.left-sidebar-inner {
+    :is(html[data-theme=dark],div.dark-theme) div#root div#left-sidebar div.left-sidebar-inner {
     background-color: ${value};
   }
 `  })
@@ -148,49 +148,49 @@ const settingsTemplate: SettingSchemaDesc[] = [
   {
     key: keyTaskColor,
     type: 'boolean',
-    title: 'Enable task marker color',
+    title: ("Enable task marker color"),
     description: '',
     default: false,
   },
   {//文字を太くする
     key: keyTaskBold,
     type: 'boolean',
-    title: 'Enable Bold task marker',
+    title: ("Enable Bold task marker"),
     description: '',
     default: false,
   },
   {
     key: keyRemoveMenuGraphView,
-    title: "Remove `Graph View` from the left sidebar menu",
+    title: ("Remove `Graph View` from the left sidebar menu"),
     type: "boolean",
     default: false,
     description: "",
   },
   {
     key: keyFontFamilyUnset,
-    title: "Unset `font-family` in `html` For fast font loading",
+    title: ("Unset `font-family` in `html` For fast font loading"),
     type: "boolean",
     default: true,
     description: "default: true",
   },
   {
     key: keyLeftSidebarMenuHeight,
-    title: "left sidebar menu, CSS: Height",
+    title: ("left sidebar menu, CSS: Height"),
     type: "boolean",
     default: true,
     description: "default: true",
   },
   {
     key: keyLeftSidebarMenuJustifyContent,
-    title: "left sidebar menu, CSS: justify-content",
+    title: ("left sidebar menu, CSS: justify-content"),
     type: "enum",
     enumChoices: ["unset", "space-evenly", "center", "space-around",],
-    default: "space-evenly",
-    description: "default: space-evenly",
+    default: "unset",
+    description: "default: unset",
   },
   {
     key: keyLeftSidebarBackground,
-    title: "left sidebar menu, Unset background color",
+    title: ("left sidebar menu, Unset background color"),
     type: "enum",
     enumChoices: ["Theme color", "black", "navy", "#2e2930", "unset",],
     default: "Theme color",
