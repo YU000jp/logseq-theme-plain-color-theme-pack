@@ -61,8 +61,8 @@
   - `true` default
   - `false`
 - left sidebar menu, CSS: justify-content [#2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/issues/2)
-  - `unset`
-  - `space-evenly` default
+  - `unset` default
+  - `space-evenly`
   - `center`
   - `space-around`
 - left sidebar menu, Unset background color [#2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/issues/2)
@@ -71,6 +71,7 @@
   - `black`
   - `navy`
   - `#2e2930`: dark purple
+
 ---
 
 ## Showcase / Questions / Ideas / Help
@@ -86,6 +87,7 @@
 ### Icon
 
 - [icooon-mono.com](https://icooon-mono.com/11223-%e5%a4%9c%e7%a9%ba%e3%81%ae%e3%83%95%e3%83%aa%e3%83%bc%e3%82%a2%e3%82%a4%e3%82%b3%e3%83%b3/)
+
 ---
 
 <a href="https://www.buymeacoffee.com/yu000japan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="🍌Buy Me A Coffee" style="height: 42px;width: 152px" ></a>
