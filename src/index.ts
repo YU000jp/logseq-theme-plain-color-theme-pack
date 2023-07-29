@@ -23,14 +23,19 @@ const main = () => {
   if (logseq.settings!.taskColor === true) taskColor();
   if (logseq.settings!.taskBold === true) taskBold();
   if (logseq.settings!.fontFamilyUnset === true) fontFamilyUnset();
+  if (logseq.settings!.leftSidebarMenuHeight === true) leftSidebarMenuHeight();
+  if (logseq.settings!.leftSidebarMenuJustifyContent !== 'unset') leftSidebarMenuJustifyContent(logseq.settings!.leftSidebarMenuJustifyContent);
+  if (logseq.settings!.leftSidebarMenuBackground !== "Theme color") leftSidebarMenuBackground(logseq.settings!.leftSidebarMenuBackground);
 
   logseq.provideStyle({ key: "common", style: fileCommon });
 
   logseq.onSettingsChanged((newSet: LSPluginBaseInfo['settings'], oldSet: LSPluginBaseInfo['settings']) => {
     if (oldSet.taskColor === true && newSet.taskColor === false) removeProvideStyle(keyTaskColor);
-    else if (oldSet.taskColor === false && newSet.taskColor === true) taskColor();
+    else
+      if (oldSet.taskColor === false && newSet.taskColor === true) taskColor();
     if (oldSet.taskBold === true && newSet.taskBold === false) removeProvideStyle(keyTaskBold);
-    else if (oldSet.taskBold === false && newSet.taskBold === true) taskBold();
+    else
+      if (oldSet.taskBold === false && newSet.taskBold === true) taskBold();
     if (oldSet.removeMenuGraphView !== true && newSet.removeMenuGraphView === true) {
       removeMenuGraphView();
     } else
@@ -39,9 +44,23 @@ const main = () => {
       }
     if (oldSet.fontFamilyUnset !== true && newSet.fontFamilyUnset === true) {
       fontFamilyUnset();
+    } else
+      if (oldSet.fontFamilyUnset === true && newSet.fontFamilyUnset !== true) {
+        removeProvideStyle(keyFontFamilyUnset);
+      }
+    if (oldSet.leftSidebarMenuHeight !== true && newSet.leftSidebarMenuHeight === true) {
+      leftSidebarMenuHeight();
+    } else
+      if (oldSet.leftSidebarMenuHeight === true && newSet.leftSidebarMenuHeight !== true) {
+        removeProvideStyle(keyLeftSidebarMenuHeight);
+      }
+    if (oldSet.leftSidebarMenuJustifyContent !== newSet.leftSidebarMenuJustifyContent) {
+      if (newSet.leftSidebarMenuJustifyContent === 'unset') removeProvideStyle(keyLeftSidebarMenuJustifyContent);
+      else leftSidebarMenuJustifyContent(newSet.leftSidebarMenuJustifyContent);
     }
-    else if (oldSet.fontFamilyUnset === true && newSet.fontFamilyUnset !== true) {
-      removeProvideStyle(keyFontFamilyUnset);
+    if (oldSet.leftSidebarMenuBackground !== newSet.leftSidebarMenuBackground) {
+      if (newSet.leftSidebarMenuBackground !== "Theme color") leftSidebarMenuBackground(newSet.leftSidebarMenuBackground);
+      else removeProvideStyle(keyLeftSidebarBackground);
     }
   });
 
@@ -79,6 +98,40 @@ html:not(.is-native-android) {
 }
 `  });
 
+//左サイドバーにあるFAVORITESとRECENTのメニューの間隔を広げる
+const keyLeftSidebarMenuHeight = 'leftSidebarMenuHeight';
+const leftSidebarMenuHeight = () => logseq.provideStyle({
+  key: keyLeftSidebarMenuHeight,
+  style: String.raw`
+  div#root div#left-sidebar div.left-sidebar-inner div.nav-content-item ul a .page-title {
+    min-height: 2em;
+    margin-right: -1em;
+    white-space: pre-wrap;
+  }
+`  });
+
+//justify-content: space-evenly
+const keyLeftSidebarMenuJustifyContent = 'leftSidebarMenuJustifyContent';
+const leftSidebarMenuJustifyContent = (value: string) => logseq.provideStyle({
+  key: keyLeftSidebarMenuJustifyContent,
+  style: String.raw`
+  div#root div#left-sidebar div.left-sidebar-inner div.nav-contents-container {
+    justify-content: ${value};
+  }
+`  });
+
+//左サイドバーの背景色を同色にする
+const keyLeftSidebarBackground = 'leftSidebarMenuBackground';
+const leftSidebarMenuBackground = (value: string) => {
+  if (value !== "Theme color") logseq.provideStyle({
+    key: keyLeftSidebarBackground,
+    style: String.raw`
+  div#root div#left-sidebar div.left-sidebar-inner {
+    background-color: ${value};
+  }
+`  })
+};
+
 const removeProvideStyle = (className: string) => {
   const doc = parent.document.head.querySelector(`style[data-injected-style^="${className}"]`) as HTMLStyleElement;
   if (doc) doc.remove();
@@ -93,32 +146,57 @@ const removeCSSclass = (className: string) => {
 // https://logseq.github.io/plugins/types/SettingSchemaDesc.html
 const settingsTemplate: SettingSchemaDesc[] = [
   {
-    key: 'taskColor',
+    key: keyTaskColor,
     type: 'boolean',
     title: 'Enable task marker color',
     description: '',
     default: false,
   },
   {//文字を太くする
-    key: 'taskBold',
+    key: keyTaskBold,
     type: 'boolean',
     title: 'Enable Bold task marker',
     description: '',
     default: false,
   },
   {
-    key: "removeMenuGraphView",
+    key: keyRemoveMenuGraphView,
     title: "Remove `Graph View` from the left sidebar menu",
     type: "boolean",
     default: false,
     description: "",
   },
   {
-    key: "fontFamilyUnset",
+    key: keyFontFamilyUnset,
     title: "Unset `font-family` in `html` For fast font loading",
     type: "boolean",
     default: true,
     description: "default: true",
+  },
+  {
+    key: keyLeftSidebarMenuHeight,
+    title: "left sidebar menu, CSS: Height",
+    type: "boolean",
+    default: true,
+    description: "default: true",
+  },
+  {
+    key: keyLeftSidebarMenuJustifyContent,
+    title: "left sidebar menu, CSS: justify-content",
+    type: "enum",
+    enumChoices: ["unset", "space-evenly", "center", "space-around"],
+    default: "unset",
+    description: "default: unset",
+  },
+  {
+    key: keyLeftSidebarBackground,
+    title: "left sidebar menu, Unset background color",
+    type: "enum",
+    enumChoices: ["Theme color", "unset", "black","navy","#2e2930"],
+    default: "Theme color",
+    description: `default: Theme color
+    unset: primary background color)
+    #2e2930: dark purple`,
   },
 ];
 
