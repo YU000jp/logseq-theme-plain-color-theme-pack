@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.1.2...v1.2.0) (2023-07-29)
+
+
+### Features
+
+* **Left Sidebar:** Add to plugin settings ([a6371ba](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/a6371baa43c0cdd586d023b735059cd405bf1312))
+
 ## [1.1.2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.1.1...v1.1.2) (2023-07-27)
 
 
