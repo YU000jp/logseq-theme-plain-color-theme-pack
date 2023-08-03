@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.1...v1.2.2) (2023-08-03)
+
+
+### Bug Fixes
+
+* **clean up:** plugin settings ([a945072](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/a945072dae07e39699dcd5424610c49a2a7cb5e9))
+
 ## [1.2.1](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.0...v1.2.1) (2023-07-29)
 
 
