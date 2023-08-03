@@ -54,3 +54,9 @@ div[label=plugin-settings-modal] div.ui__modal-panel div.cp__settings-inner asid
 div#root main div.ui__modal-overlay div {
   opacity: .4
 }
+div#root div[label=plugin-settings-modal] div.cp__plugins-settings-inner > span.edit-file {
+  top: -1em
+}
+div#root div[label=plugin-settings-modal] div.cp__plugins-settings-inner div.desc-item>h2 code {
+  display: none;
+}
