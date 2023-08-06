@@ -60,3 +60,7 @@ div#root div[label=plugin-settings-modal] div.cp__plugins-settings-inner > span.
 div#root div[label=plugin-settings-modal] div.cp__plugins-settings-inner div.desc-item>h2 code {
   display: none;
 }
+*, :after, :before {
+  border: unset!important;
+  box-sizing: unset!important;
+}
