@@ -5,7 +5,7 @@
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-theme-classic-dark-theme-pack)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
 [![License](https://img.shields.io/github/license/YU000jp/logseq-theme-classic-dark-theme-pack?color=blue)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-theme-classic-dark-theme-pack/total.svg)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
-<!-- Published 2023 -->
+ Since 2023/07/25
 
 ---
 
