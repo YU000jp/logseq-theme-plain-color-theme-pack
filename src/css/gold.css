@@ -20,7 +20,9 @@ html[data-theme=dark] {
     --ls-secondary-border-color: var(--ls-selection-background-color);
     --ls-page-inline-code-bg-color: #42341bc9;
     --ls-page-checkbox-color: #a57b2df7;
+    --ls-block-properties-background-color: var(--ls-primary-background-color);
 }
+
 .bg-indigo-600 {
     background-color: var(--ls-guideline-color);
 }

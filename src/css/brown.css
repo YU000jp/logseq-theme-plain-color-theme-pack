@@ -6,7 +6,7 @@ html[data-theme=dark] {
     --ls-quaternary-background-color: #813636c4;
     --ls-table-tr-even-background-color: var(--ls-quaternary-background-color);
     --ls-block-ref-link-text-color: var(--ls-scrollbar-foreground-color);
-    --ls-guideline-color: #a55353b5;
+    --ls-guideline-color: #603434b5;
     --ls-selection-background-color: #e1212163;
     --ls-active-primary-color: #812a2aeb;
     --ls-active-secondary-color: #fbe8e8;
@@ -20,7 +20,9 @@ html[data-theme=dark] {
     --ls-secondary-border-color: var(--ls-selection-background-color);
     --ls-page-inline-code-bg-color: #382121;
     --ls-page-checkbox-color: var(--ls-link-text-color);
+    --ls-block-properties-background-color: var(--ls-primary-background-color);
 }
+
 .bg-indigo-600 {
     background-color: var(--ls-guideline-color);
 }
