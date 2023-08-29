@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.2...v1.2.3) (2023-08-29)
+
+
+### Bug Fixes
+
+* background-color, link-color, guideline-color ([0890283](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/0890283c98dd1f9cd29b497eb68568fcf428855c))
+
 ## [1.2.2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.1...v1.2.2) (2023-08-03)
 
 
