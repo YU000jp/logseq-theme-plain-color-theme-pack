@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.3...v1.2.4) (2023-08-31)
+
+
+### Bug Fixes
+
+* **design:** change color ([50009a3](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/50009a387d5a4c927f886a66a3ad95dc4b3415ee))
+
 ## [1.2.3](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.2...v1.2.3) (2023-08-29)
 
 
