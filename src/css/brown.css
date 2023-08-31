@@ -3,7 +3,7 @@ html[data-theme=dark] {
     --ls-primary-background-color: #000000;
     --ls-secondary-background-color: #262020;
     --ls-tertiary-background-color: #4e2727;
-    --ls-quaternary-background-color: #813636c4;
+    --ls-quaternary-background-color: #481717c4;
     --ls-table-tr-even-background-color: var(--ls-quaternary-background-color);
     --ls-block-ref-link-text-color: var(--ls-scrollbar-foreground-color);
     --ls-guideline-color: #603434b5;

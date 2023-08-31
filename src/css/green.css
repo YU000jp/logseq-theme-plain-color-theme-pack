@@ -3,15 +3,13 @@ html[data-theme=dark] {
     --ls-primary-background-color: #181c16;
     --ls-secondary-background-color: #0b2c0df7;
     --ls-tertiary-background-color: #182e25;
-    --ls-quaternary-background-color: #2a7a40e3;
+    --ls-quaternary-background-color: #034214c9;
     --ls-table-tr-even-background-color: #184e278c;
     --ls-block-ref-link-text-color: var(--ls-scrollbar-foreground-color);
     --ls-guideline-color: #326640a3;
     --ls-selection-background-color: #0e7e0478;
-    --ls-active-primary-color: #49b14bcc;
+    --ls-active-primary-color: #699d6acc;
     --ls-active-secondary-color: #efe8fb;
-    --ls-link-text-color: #deffdcc2;
-    --ls-primary-text-color: #c4f7e7e0;
     --ls-secondary-text-color: #5fbd89;
     --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
     --ls-block-bullet-color: #f0f8ff96;
