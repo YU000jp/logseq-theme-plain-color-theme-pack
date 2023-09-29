@@ -9,18 +9,6 @@
 
 ---
 
-## Brown Dark Theme
-
-  ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/77ee90b3-d27f-4ce0-9a78-48aeaf321e8a)
-
-## Gold Dark Theme
-
-  ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/9c6ada2d-c4d1-459a-a069-1408aa925d08)
-
-## Green Dark Theme
-
-  ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/e07543a6-7325-49f7-8801-356a543a81f4)
-
 ## Steel blue Dark Theme
 
   ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/10354b21-56f8-49f1-a632-fede0b5d1983)
@@ -28,6 +16,8 @@
 ## Violet Dark Theme
 
   ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/edc83f9f-9c21-4cd1-a122-2a23bef9f07c)
+
+### [3 other types here](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/wiki/Theme-Color)
 
 ---
 
