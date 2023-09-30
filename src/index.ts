@@ -1,22 +1,22 @@
 import '@logseq/libs'; //https://plugins-doc.logseq.com/
 import { LSPluginBaseInfo, SettingSchemaDesc, } from '@logseq/libs/dist/LSPlugin.user';
-// import { setup as l10nSetup, t } from "logseq-l10n"; //https://github.com/sethyuan/logseq-l10n
-// import ja from "./translations/ja.json";
+import { setup as l10nSetup, t } from "logseq-l10n"; //https://github.com/sethyuan/logseq-l10n
+import ja from "./translations/ja.json";
 import fileTaskColor from './css/taskColor.css?inline';
 import fileTaskBold from './css/taskBold.css?inline';
 import fileCommon from './css/common.css?inline';
 
 /* main */
 const main = () => {
-  // (async () => {
-  //   try {
-  //     await l10nSetup({ builtinTranslations: { ja } });
-  //   } finally {
+  (async () => {
+    try {
+      await l10nSetup({ builtinTranslations: { ja } });
+    } finally {
       /* user settings */
-      logseq.useSettingsSchema(settingsTemplate);
+      logseq.useSettingsSchema(settingsTemplate());
       if (!logseq.settings) setTimeout(() => logseq.showSettingsUI(), 300);
-  //   }
-  // })();
+    }
+  })();
 
   /* provideStyle */
   if (logseq.settings!.removeMenuGraphView === true) removeMenuGraphView();
@@ -144,45 +144,45 @@ const removeCSSclass = (className: string) => {
 
 /* user setting */
 // https://logseq.github.io/plugins/types/SettingSchemaDesc.html
-const settingsTemplate: SettingSchemaDesc[] = [
+const settingsTemplate = (): SettingSchemaDesc[] => [
   {
     key: keyTaskColor,
     type: 'boolean',
-    title: ("Enable task marker color"),
+    title: t("Enable task marker color"),
     description: '',
     default: false,
   },
   {//文字を太くする
     key: keyTaskBold,
     type: 'boolean',
-    title: ("Enable Bold task marker"),
+    title: t("Enable Bold task marker"),
     description: '',
     default: false,
   },
   {
     key: keyRemoveMenuGraphView,
-    title: ("Remove `Graph View` from the left sidebar menu"),
+    title: t("Remove `Graph View` from the left sidebar menu"),
     type: "boolean",
     default: false,
     description: "",
   },
   {
     key: keyFontFamilyUnset,
-    title: ("Unset `font-family` in `html` For fast font loading"),
+    title: t("Unset `font-family` in `html` For fast font loading"),
     type: "boolean",
     default: true,
     description: "default: true",
   },
   {
     key: keyLeftSidebarMenuHeight,
-    title: ("left sidebar menu, CSS: Height"),
+    title: t("left sidebar menu, Increase the gap between favorites and history a little"),
     type: "boolean",
     default: true,
     description: "default: true",
   },
   {
     key: keyLeftSidebarMenuJustifyContent,
-    title: ("left sidebar menu, CSS: justify-content"),
+    title: t("left sidebar menu, Adjust the position of favorites and history"),
     type: "enum",
     enumChoices: ["unset", "space-evenly", "center", "space-around",],
     default: "unset",
@@ -190,7 +190,7 @@ const settingsTemplate: SettingSchemaDesc[] = [
   },
   {
     key: keyLeftSidebarBackground,
-    title: ("left sidebar menu, Unset background color"),
+    title: t("left sidebar menu, Unset background color"),
     type: "enum",
     enumChoices: ["Theme color", "black", "navy", "#2e2930", "unset",],
     default: "Theme color",
