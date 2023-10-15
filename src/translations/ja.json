@@ -1,9 +1,11 @@
 {
     "Enable task marker color": "タスクにマーカーカラーをつける",
     "Enable Bold task mark": "タスクを太字にする",
-    "Remove `Graph View` from the left sidebar menu": "左サイドバーからグラフビューを削除する",
+    "Enable Bold task marker": "タスクのマーカーを太字にする",
     "Unset `font-family` in `html` For fast font loading": "フォントの読み込みを高速化するために、font-family指定を削除する",
-    "left sidebar menu, Increase the gap between favorites and history a little": "左サイドバーのお気に入りと履歴の間隔を少し広げる",
-    "left sidebar menu, Adjust the position of favorites and history": "左サイドバーのお気に入りと履歴の位置を調整する",
-    "left sidebar menu, Unset background color": "左サイドバーの背景色を変更する"
+    "Left Sidebar Menu": "左サイドバーのメニュー",
+    "Remove `Graph View` button": "グラフビューボタンを削除する",
+    "Increase the gap between favorites and history a little": "お気に入りと履歴の間隔を少し広げる",
+    "Adjust the position of favorites and history": "お気に入りと履歴の位置を調整する",
+    "Unset background color": "背景色を変更する"
 }

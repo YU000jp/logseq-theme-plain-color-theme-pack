@@ -1,16 +1,19 @@
-    /* TODO colors */
-    div#root a.block-marker:is(.NOW, .DOING) {
+/* TODO colors */
+body>div#root>div>main>div#app-container a.block-marker {
+
+    &:is(.NOW, .DOING) {
         color: #06C235;
     }
 
-    div#root a.block-marker.LATER {
+    &.LATER {
         color: #e88438;
     }
 
-    div#root a.block-marker.TODO {
+    &.TODO {
         color: #d3455b;
     }
 
-    div#root a.block-marker.WAITING {
+    &.WAITING {
         color: #f6c423;
     }
+}

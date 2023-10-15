@@ -1,4 +1,4 @@
-div#root a.block-marker:is(.NOW, .DOING, .DONE, .TODO, .WAITING, .LATER) {
+body>div#root>div>main>div#app-container a.block-marker:is(.NOW, .DOING, .DONE, .TODO, .WAITING, .LATER) {
     font-weight: bolder;
     font-size: 1.1em;
 }
