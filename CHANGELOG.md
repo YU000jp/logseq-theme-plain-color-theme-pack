@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.4...v1.3.0) (2023-10-15)
+
+
+### Bug Fixes
+
+* **bug:** background-color for form-text on plugin settings & Cleanup CSS ([a1ce71e](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/a1ce71ee257c4642edc908586e9b59395adfc02d))
+
+
+### Features
+
+* **doc:** ja ([d668b4f](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/d668b4f8f0f06e4672152c8f495dbbf57a56a272))
+
 ## [1.2.4](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.3...v1.2.4) (2023-08-31)
 
 
