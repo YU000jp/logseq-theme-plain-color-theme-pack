@@ -1,33 +1,31 @@
 # Logseq Theme: Classic dark theme pack
 
-- A pack featuring color variations based on Logseq's original design theme.
+[English](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack) | [日本語](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/blob/main/readme.ja.md)
+
+This pack includes new color variations based on Logseq's original dark theme.
 
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-theme-classic-dark-theme-pack)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
 [![License](https://img.shields.io/github/license/YU000jp/logseq-theme-classic-dark-theme-pack?color=blue)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-theme-classic-dark-theme-pack/total.svg)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
  Since 2023/07/25
 
----
-
 ## Steel blue Dark Theme
 
-  ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/10354b21-56f8-49f1-a632-fede0b5d1983)
+   ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/10354b21-56f8-49f1-a632-fede0b5d1983)
 
 ## Violet Dark Theme
 
-  ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/edc83f9f-9c21-4cd1-a122-2a23bef9f07c)
+   ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/edc83f9f-9c21-4cd1-a122-2a23bef9f07c)
 
-### [3 other types here](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/wiki/Theme-Color)
+[3 other types here](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/wiki/Theme-Color)
 
 ---
 
 ## Getting Started
 
-### Install from Logseq Marketplace
+Install from Logseq Marketplace
 
-- Press [`---`] on the top right toolbar to open [`Plugins`]
-- Select [`Marketplace`] and [`Theme`]
-- Type `Classic` in the search field, select it from the search results and install
+- Press [`---`] on the top right toolbar to open [`Plugins`]. Select [`Marketplace`] and [`Theme`]. Type `Classic` in the search field, select it from the search results and install.
 
   ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/388034c9-67f0-45aa-95ef-81419e44b2eb)
 
@@ -68,16 +66,10 @@
 
 > Go to the [discussion](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/discussions) tab to ask and find this kind of things.
 
-## Author
-
-- GitHub: [YU000jp](https://github.com/YU000jp)
-
 ## Prior art & Credit
 
-### Icon
+Icon > [icooon-mono.com](https://icooon-mono.com/11223-%e5%a4%9c%e7%a9%ba%e3%81%ae%e3%83%95%e3%83%aa%e3%83%bc%e3%82%a2%e3%82%a4%e3%82%b3%e3%83%b3/)
 
-- [icooon-mono.com](https://icooon-mono.com/11223-%e5%a4%9c%e7%a9%ba%e3%81%ae%e3%83%95%e3%83%aa%e3%83%bc%e3%82%a2%e3%82%a4%e3%82%b3%e3%83%b3/)
-
----
+Author > [YU000jp (GitHub)](https://github.com/YU000jp)
 
 <a href="https://www.buymeacoffee.com/yu000japan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="🍌Buy Me A Coffee" style="height: 42px;width: 152px" ></a>
