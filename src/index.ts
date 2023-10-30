@@ -113,7 +113,7 @@ const removeMenuGraphView = () =>
   logseq.provideStyle({
     key: keyRemoveMenuGraphView,
     style: String.raw`
-  body>div#root>div>main div#left-sidebar div.graph-view-nav{
+  body>div#root>div>main div#left-sidebar div.graph-view-nav {
     display:none;
   }
 `,
@@ -164,8 +164,11 @@ const leftSidebarMenuBackground = (value: string) => {
     logseq.provideStyle({
       key: keyLeftSidebarBackground,
       style: String.raw`
-  :is(html[data-theme=dark],div.dark-theme)>body>div#root>div>main div#left-sidebar div.left-sidebar-inner {
-    background-color: ${value};
+  html[data-theme=dark]>body>div#root>div,
+  body>div#root>div.dark-theme {
+    &>main div#left-sidebar div.left-sidebar-inner {
+      background-color: ${value};
+    }
   }
 `,
     });
@@ -176,11 +179,6 @@ const removeProvideStyle = (className: string) => {
     `style[data-injected-style^="${className}"]`
   ) as HTMLStyleElement;
   if (doc) doc.remove();
-};
-
-const removeCSSclass = (className: string) => {
-  if (parent.document.body.classList?.contains(className))
-    parent.document.body.classList.remove(className);
 };
 
 /* user setting */
