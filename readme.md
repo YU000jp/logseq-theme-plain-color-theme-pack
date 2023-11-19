@@ -9,7 +9,7 @@ This pack includes new color variations based on Logseq's original dark theme.
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-theme-classic-dark-theme-pack/total.svg)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
  Since 2023/07/25
 
-## Gray dark theme
+## Gray dark theme 🆕
 
    ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/49e279aa-b888-4c94-b226-1f809314c4c9)
 
