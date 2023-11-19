@@ -9,11 +9,15 @@
 [![ダウンロード](https://img.shields.io/github/downloads/YU000jp/logseq-theme-classic-dark-theme-pack/total.svg)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
   2023年7月25日公開
 
-## スチールブルーダークテーマ
+## グレー(ブラック) ダークテーマ 🆕
+
+   ![image](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/49e279aa-b888-4c94-b226-1f809314c4c9)
+
+## 濃紺 ダークテーマ
 
    ![画像](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/10354b21-56f8-49f1-a632-fede0b5d1983)
 
-## バイオレットダークテーマ
+## 紫色 ダークテーマ
 
    ![画像](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/assets/111847207/edc83f9f-9c21-4cd1-a122-2a23bef9f07c)
 
