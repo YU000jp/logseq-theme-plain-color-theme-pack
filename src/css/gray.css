@@ -1,0 +1,28 @@
+.dark-theme,
+html[data-theme=dark] {
+    --ls-primary-background-color: #1f1e1ef2;
+    --ls-secondary-background-color: #2f2e2ee0;
+    --ls-tertiary-background-color: #323232;
+    --ls-quaternary-background-color: #4d4d4de0;
+    --ls-guideline-color: #4b4b4be0;
+    --ls-selection-background-color: #9191916e;
+    --ls-active-primary-color: #3f3f3fcf;
+    --ls-active-secondary-color: #efe8fb;
+    --ls-block-bullet-border-color: var(--ls-quaternary-background-color);
+    --ls-block-bullet-color: #e0e0e096;
+    --ls-link-text-color: #a9a9a9eb;
+    --ls-primary-text-color: #d4d4d4;
+    --ls-secondary-text-color: #8f8f8f;
+    --ls-scrollbar-foreground-color: #4e4e4eeb;
+    --ls-border-color: #727272;
+    --ls-block-ref-link-text-color: #686868;
+    --ls-page-checkbox-color: var(--ls-border-color);
+    --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
+}
+.bg-indigo-600 {
+    background-color: var(--ls-guideline-color);
+}
+
+.bg-indigo-600:hover {
+    background-color: var(--ls-selection-background-color);
+}

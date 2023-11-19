@@ -17,6 +17,18 @@
                 "mode": "dark"
             },
             {
+                "name": "Gray Dark Theme",
+                "url": "./src/css/gray.css",
+                "description": "Simple dark theme",
+                "mode": "dark"
+            },
+            {
+                "name": "Violet Dark Theme",
+                "url": "./src/css/violet.css",
+                "description": "Simple dark theme",
+                "mode": "dark"
+            },
+            {
                 "name": "Gold Dark Theme",
                 "url": "./src/css/gold.css",
                 "description": "Simple dark theme",
@@ -25,12 +37,6 @@
             {
                 "name": "Green Dark Theme",
                 "url": "./src/css/green.css",
-                "description": "Simple dark theme",
-                "mode": "dark"
-            },
-            {
-                "name": "Violet Dark Theme",
-                "url": "./src/css/violet.css",
                 "description": "Simple dark theme",
                 "mode": "dark"
             },
