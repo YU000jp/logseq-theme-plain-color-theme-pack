@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.3.0...v1.3.1) (2023-11-19)
+
+
+### Bug Fixes
+
+* **bug:** CSS ([601736d](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/601736dfb25c5b76d7af45a4c88a24e07ad657f3))
+
 # [1.3.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.2.4...v1.3.0) (2023-10-15)
 
 
