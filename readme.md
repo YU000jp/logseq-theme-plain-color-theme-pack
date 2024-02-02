@@ -47,8 +47,8 @@ Install from Logseq Marketplace
   - `true`
   - `false` default
 - Unset 'font-family' in 'html' For fast font loading
-  - `true` default
-  - `false`
+  - `true`
+  - `false` default
 - left sidebar menu, CSS: Height [#2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/issues/2)
   - `true` default
   - `false`
