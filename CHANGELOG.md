@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.4.0...v1.5.0) (2024-2-2)
+
+
+### Features
+
+* **Change:** Change a default setting in plugin settings ([3e13a85](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/3e13a8538f68d4148f7e8ab26f337a3cb32f5ec7))
+
 # [1.4.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.3.1...v1.4.0) (2023-11-19)
 
 
