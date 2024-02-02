@@ -1,114 +1,93 @@
-import "@logseq/libs"; //https://plugins-doc.logseq.com/
-import {
-  LSPluginBaseInfo,
-  SettingSchemaDesc,
-} from "@logseq/libs/dist/LSPlugin.user";
-import { setup as l10nSetup, t } from "logseq-l10n"; //https://github.com/sethyuan/logseq-l10n
-import ja from "./translations/ja.json";
-import fileTaskColor from "./css/taskColor.css?inline";
-import fileTaskBold from "./css/taskBold.css?inline";
-import fileCommon from "./css/common.css?inline";
+import "@logseq/libs" //https://plugins-doc.logseq.com/
+import { LSPluginBaseInfo, SettingSchemaDesc, } from "@logseq/libs/dist/LSPlugin.user"
+import { setup as l10nSetup, t } from "logseq-l10n" //https://github.com/sethyuan/logseq-l10n
+import ja from "./translations/ja.json"
+import fileTaskColor from "./css/taskColor.css?inline"
+import fileTaskBold from "./css/taskBold.css?inline"
+import fileCommon from "./css/common.css?inline"
 
 /* main */
 const main = async () => {
-  await l10nSetup({ builtinTranslations: { ja } });
+  await l10nSetup({ builtinTranslations: { ja } })
   /* user settings */
-  logseq.useSettingsSchema(settingsTemplate());
-  if (!logseq.settings) setTimeout(() => logseq.showSettingsUI(), 300);
+  logseq.useSettingsSchema(settingsTemplate())
+  if (!logseq.settings) setTimeout(() => logseq.showSettingsUI(), 300)
 
   /* provideStyle */
-  if (logseq.settings!.removeMenuGraphView === true) removeMenuGraphView();
-  if (logseq.settings!.taskColor === true) taskColor();
-  if (logseq.settings!.taskBold === true) taskBold();
-  if (logseq.settings!.fontFamilyUnset === true) fontFamilyUnset();
-  if (logseq.settings!.leftSidebarMenuHeight === true) leftSidebarMenuHeight();
-  if (logseq.settings!.leftSidebarMenuJustifyContent !== "unset")
-    leftSidebarMenuJustifyContent(
-      logseq.settings!.leftSidebarMenuJustifyContent
-    );
-  if (logseq.settings!.leftSidebarMenuBackground !== "Theme color")
-    leftSidebarMenuBackground(logseq.settings!.leftSidebarMenuBackground);
+  if (logseq.settings!.removeMenuGraphView === true) removeMenuGraphView()
+  if (logseq.settings!.taskColor === true) taskColor()
+  if (logseq.settings!.taskBold === true) taskBold()
+  if (logseq.settings!.fontFamilyUnset === true) fontFamilyUnset()
+  if (logseq.settings!.leftSidebarMenuHeight === true) leftSidebarMenuHeight()
+  if (logseq.settings!.leftSidebarMenuJustifyContent !== "unset") leftSidebarMenuJustifyContent(logseq.settings!.leftSidebarMenuJustifyContent)
+  if (logseq.settings!.leftSidebarMenuBackground !== "Theme color") leftSidebarMenuBackground(logseq.settings!.leftSidebarMenuBackground)
 
-  logseq.provideStyle({ key: "common", style: fileCommon });
+  logseq.provideStyle({ key: "common", style: fileCommon })
 
-  logseq.onSettingsChanged(
-    (
-      newSet: LSPluginBaseInfo["settings"],
-      oldSet: LSPluginBaseInfo["settings"]
-    ) => {
-      if (oldSet.taskColor === true && newSet.taskColor === false)
-        removeProvideStyle(keyTaskColor);
-      else if (oldSet.taskColor === false && newSet.taskColor === true)
-        taskColor();
-      if (oldSet.taskBold === true && newSet.taskBold === false)
-        removeProvideStyle(keyTaskBold);
-      else if (oldSet.taskBold === false && newSet.taskBold === true)
-        taskBold();
-      if (
-        oldSet.removeMenuGraphView !== true &&
-        newSet.removeMenuGraphView === true
-      ) {
-        removeMenuGraphView();
-      } else if (
-        oldSet.removeMenuGraphView === true &&
-        newSet.removeMenuGraphView !== true
-      ) {
-        removeProvideStyle(keyRemoveMenuGraphView);
-      }
-      if (oldSet.fontFamilyUnset !== true && newSet.fontFamilyUnset === true) {
-        fontFamilyUnset();
-      } else if (
-        oldSet.fontFamilyUnset === true &&
-        newSet.fontFamilyUnset !== true
-      ) {
-        removeProvideStyle(keyFontFamilyUnset);
-      }
-      if (
-        oldSet.leftSidebarMenuHeight !== true &&
-        newSet.leftSidebarMenuHeight === true
-      ) {
-        leftSidebarMenuHeight();
-      } else if (
-        oldSet.leftSidebarMenuHeight === true &&
-        newSet.leftSidebarMenuHeight !== true
-      ) {
-        removeProvideStyle(keyLeftSidebarMenuHeight);
-      }
-      if (
-        oldSet.leftSidebarMenuJustifyContent !==
-        newSet.leftSidebarMenuJustifyContent
-      ) {
-        if (newSet.leftSidebarMenuJustifyContent === "unset")
-          removeProvideStyle(keyLeftSidebarMenuJustifyContent);
-        else
-          leftSidebarMenuJustifyContent(newSet.leftSidebarMenuJustifyContent);
-      }
-      if (
-        oldSet.leftSidebarMenuBackground !== newSet.leftSidebarMenuBackground
-      ) {
-        if (newSet.leftSidebarMenuBackground !== "Theme color")
-          leftSidebarMenuBackground(newSet.leftSidebarMenuBackground);
-        else removeProvideStyle(keyLeftSidebarBackground);
-      }
-    }
-  );
-}; /* end_main */
+  logseq.onSettingsChanged((newSet: LSPluginBaseInfo["settings"], oldSet: LSPluginBaseInfo["settings"]) => {
+    if (oldSet.taskColor === true
+      && newSet.taskColor === false)
+      removeProvideStyle(keyTaskColor)
+    else
+      if (oldSet.taskColor === false
+        && newSet.taskColor === true)
+        taskColor()
+    if (oldSet.taskBold === true
+      && newSet.taskBold === false)
+      removeProvideStyle(keyTaskBold)
+    else
+      if (oldSet.taskBold === false
+        && newSet.taskBold === true)
+        taskBold()
+    if (oldSet.removeMenuGraphView !== true
+      && newSet.removeMenuGraphView === true)
+      removeMenuGraphView()
+    else
+      if (oldSet.removeMenuGraphView === true
+        && newSet.removeMenuGraphView !== true)
+        removeProvideStyle(keyRemoveMenuGraphView)
 
-const keyTaskColor = "taskColor";
+    if (oldSet.fontFamilyUnset !== true
+      && newSet.fontFamilyUnset === true)
+      fontFamilyUnset()
+    else
+      if (oldSet.fontFamilyUnset === true
+        && newSet.fontFamilyUnset !== true)
+        removeProvideStyle(keyFontFamilyUnset)
+    if (oldSet.leftSidebarMenuHeight !== true
+      && newSet.leftSidebarMenuHeight === true)
+      leftSidebarMenuHeight()
+    else
+      if (oldSet.leftSidebarMenuHeight === true
+        && newSet.leftSidebarMenuHeight !== true)
+        removeProvideStyle(keyLeftSidebarMenuHeight)
+    if (oldSet.leftSidebarMenuJustifyContent !== newSet.leftSidebarMenuJustifyContent)
+      if (newSet.leftSidebarMenuJustifyContent === "unset")
+        removeProvideStyle(keyLeftSidebarMenuJustifyContent)
+      else
+        leftSidebarMenuJustifyContent(newSet.leftSidebarMenuJustifyContent)
+    if (oldSet.leftSidebarMenuBackground !== newSet.leftSidebarMenuBackground)
+      if (newSet.leftSidebarMenuBackground !== "Theme color")
+        leftSidebarMenuBackground(newSet.leftSidebarMenuBackground)
+      else removeProvideStyle(keyLeftSidebarBackground)
+  })
+} /* end_main */
+
+const keyTaskColor = "taskColor"
 const taskColor = () =>
   logseq.provideStyle({
     key: keyTaskColor,
     style: fileTaskColor,
-  });
+  })
 
-const keyTaskBold = "taskBold";
+const keyTaskBold = "taskBold"
 const taskBold = () =>
   logseq.provideStyle({
     key: keyTaskBold,
     style: fileTaskBold,
-  });
+  })
 
-const keyRemoveMenuGraphView = "removeMenuGraphView";
+const keyRemoveMenuGraphView = "removeMenuGraphView"
 const removeMenuGraphView = () =>
   logseq.provideStyle({
     key: keyRemoveMenuGraphView,
@@ -117,9 +96,9 @@ const removeMenuGraphView = () =>
     display:none;
   }
 `,
-  });
+  })
 
-const keyFontFamilyUnset = "fontFamilyUnset";
+const keyFontFamilyUnset = "fontFamilyUnset"
 const fontFamilyUnset = () =>
   logseq.provideStyle({
     key: keyFontFamilyUnset,
@@ -129,10 +108,10 @@ const fontFamilyUnset = () =>
     /* var(--ls-font-family) */
   }
 `,
-  });
+  })
 
 //左サイドバーにあるFAVORITESとRECENTのメニューの間隔を広げる
-const keyLeftSidebarMenuHeight = "leftSidebarMenuHeight";
+const keyLeftSidebarMenuHeight = "leftSidebarMenuHeight"
 const leftSidebarMenuHeight = () =>
   logseq.provideStyle({
     key: keyLeftSidebarMenuHeight,
@@ -143,10 +122,10 @@ const leftSidebarMenuHeight = () =>
     white-space: pre-wrap;
   }
 `,
-  });
+  })
 
 //justify-content: space-evenly
-const keyLeftSidebarMenuJustifyContent = "leftSidebarMenuJustifyContent";
+const keyLeftSidebarMenuJustifyContent = "leftSidebarMenuJustifyContent"
 const leftSidebarMenuJustifyContent = (value: string) =>
   logseq.provideStyle({
     key: keyLeftSidebarMenuJustifyContent,
@@ -155,10 +134,10 @@ const leftSidebarMenuJustifyContent = (value: string) =>
     justify-content: ${value};
   }
 `,
-  });
+  })
 
 //左サイドバーの背景色を同色にする
-const keyLeftSidebarBackground = "leftSidebarMenuBackground";
+const keyLeftSidebarBackground = "leftSidebarMenuBackground"
 const leftSidebarMenuBackground = (value: string) => {
   if (value !== "Theme color")
     logseq.provideStyle({
@@ -171,15 +150,15 @@ const leftSidebarMenuBackground = (value: string) => {
     }
   }
 `,
-    });
-};
+    })
+}
 
 const removeProvideStyle = (className: string) => {
   const doc = parent.document.head.querySelector(
     `style[data-injected-style^="${className}"]`
-  ) as HTMLStyleElement;
-  if (doc) doc.remove();
-};
+  ) as HTMLStyleElement
+  if (doc) doc.remove()
+}
 
 /* user setting */
 // https://logseq.github.io/plugins/types/SettingSchemaDesc.html
@@ -250,6 +229,6 @@ const settingsTemplate = (): SettingSchemaDesc[] => [
     #2e2930: dark purple
     `,
   },
-];
+]
 
-logseq.ready(main).catch(console.error);
+logseq.ready(main).catch(console.error)
