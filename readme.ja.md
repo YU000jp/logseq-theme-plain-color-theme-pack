@@ -47,8 +47,8 @@ Logseq マーケットプレイスからインストール
   - `true`
   - デフォルトは `false`
 - 'html' の 'font-family' を解除してフォントの高速読み込みを行う
-  - デフォルトは `true`
-  - `false`
+  - `true`
+  - デフォルトは `false`
 - 左サイドバーのメニュー、CSS: 高さ [#2](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/issues/2)
   - デフォルトは `true`
   - `false`
