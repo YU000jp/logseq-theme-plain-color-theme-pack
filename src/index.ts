@@ -167,8 +167,8 @@ const settingsTemplate = (): SettingSchemaDesc[] => [
     key: keyFontFamilyUnset,
     title: t("Unset `font-family` in `html` For fast font loading"),
     type: "boolean",
-    default: true,
-    description: "default: true",
+    default: false,
+    description: "default: false",
   },
   {
     key: keyTaskColor,
