@@ -19,8 +19,8 @@ const main = async () => {
   if (logseq.settings!.taskBold === true) taskBold()
   if (logseq.settings!.fontFamilyUnset === true) fontFamilyUnset()
   if (logseq.settings!.leftSidebarMenuHeight === true) leftSidebarMenuHeight()
-  if (logseq.settings!.leftSidebarMenuJustifyContent !== "unset") leftSidebarMenuJustifyContent(logseq.settings!.leftSidebarMenuJustifyContent)
-  if (logseq.settings!.leftSidebarMenuBackground !== "Theme color") leftSidebarMenuBackground(logseq.settings!.leftSidebarMenuBackground)
+  if (logseq.settings!.leftSidebarMenuJustifyContent !== "unset") leftSidebarMenuJustifyContent(logseq.settings!.leftSidebarMenuJustifyContent as string)
+  if (logseq.settings!.leftSidebarMenuBackground !== "Theme color") leftSidebarMenuBackground(logseq.settings!.leftSidebarMenuBackground as string)
 
   logseq.provideStyle({ key: "common", style: fileCommon })
 
@@ -65,10 +65,10 @@ const main = async () => {
       if (newSet.leftSidebarMenuJustifyContent === "unset")
         removeProvideStyle(keyLeftSidebarMenuJustifyContent)
       else
-        leftSidebarMenuJustifyContent(newSet.leftSidebarMenuJustifyContent)
+        leftSidebarMenuJustifyContent(newSet.leftSidebarMenuJustifyContent as string)
     if (oldSet.leftSidebarMenuBackground !== newSet.leftSidebarMenuBackground)
       if (newSet.leftSidebarMenuBackground !== "Theme color")
-        leftSidebarMenuBackground(newSet.leftSidebarMenuBackground)
+        leftSidebarMenuBackground(newSet.leftSidebarMenuBackground as string)
       else removeProvideStyle(keyLeftSidebarBackground)
   })
 } /* end_main */
