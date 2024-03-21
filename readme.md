@@ -2,7 +2,7 @@
 
 [English](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack) | [日本語](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/blob/main/readme.ja.md)
 
-This pack includes new color variations based on Logseq's original dark theme.
+This pack includes new color variations based on the Logseq default dark theme.
 
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-theme-classic-dark-theme-pack)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
 [![License](https://img.shields.io/github/license/YU000jp/logseq-theme-classic-dark-theme-pack?color=blue)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/LICENSE)
