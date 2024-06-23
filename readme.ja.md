@@ -1,13 +1,14 @@
 # Logseqテーマ： Classic Dark Theme pack
 
-[English](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack) | [日本語](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/blob/main/readme.ja.md)
+このパックには、Logseqの標準ダークテーマをもとに、複数のカラーバリエーションが含まれています。
 
-このパックには、Logseqの標準ダークテーマをもとに、新しいカラーバリエーションが含まれています。
+<div align="right">
 
-[![最新リリースバージョン](https://img.shields.io/github/v/release/YU000jp/logseq-theme-classic-dark-theme-pack)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
+[English](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack) | [日本語](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/blob/main/readme.ja.md) [![最新リリースバージョン](https://img.shields.io/github/v/release/YU000jp/logseq-theme-classic-dark-theme-pack)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
 [![ライセンス](https://img.shields.io/github/license/YU000jp/logseq-theme-classic-dark-theme-pack?color=blue)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/LICENSE)
 [![ダウンロード](https://img.shields.io/github/downloads/YU000jp/logseq-theme-classic-dark-theme-pack/total.svg)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)
-  2023年7月25日公開
+  2023年7月25日公開 <a href="https://www.buymeacoffee.com/yu000japan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="🍌Buy Me A Coffee" style="height: 42px; width: 152px;"></a>
+</div>
 
 ## グレー(ブラック) ダークテーマ 🆕
 
@@ -74,8 +75,5 @@ Logseq マーケットプレイスからインストール
 
 ## 先行事例とクレジット
 
-アイコン > [icooon-mono.com](https://icooon-mono.com/11223-%e5%a4%9c%e7%a9%ba%e3%81%ae%e3%83%95%e3%83%aa%e3%83%bc%e3%82%a4%e3%82%b3%e3%83%b3/)
-
-製作者 > [@YU000jp](https://github.com/YU000jp)
-
-<a href="https://www.buymeacoffee.com/yu000japan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="🍌Buy Me A Coffee" style="height: 42px; width: 152px;"></a>
+- アイコン > [icooon-mono.com](https://icooon-mono.com/11223-%e5%a4%9c%e7%a9%ba%e3%81%ae%e3%83%95%e3%83%aa%e3%83%bc%e3%82%a4%e3%82%b3%e3%83%b3/)
+- 製作者 > [@YU000jp](https://github.com/YU000jp)
