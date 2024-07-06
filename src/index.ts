@@ -14,6 +14,7 @@ const main = async () => {
   if (!logseq.settings) setTimeout(() => logseq.showSettingsUI(), 300)
 
   /* provideStyle */
+  if (logseq.settings!.accentColorUnderline === true) accentColorUnderline()
   if (logseq.settings!.removeMenuGraphView === true) removeMenuGraphView()
   if (logseq.settings!.taskColor === true) taskColor()
   if (logseq.settings!.taskBold === true) taskBold()
@@ -25,6 +26,13 @@ const main = async () => {
   logseq.provideStyle({ key: "common", style: fileCommon })
 
   logseq.onSettingsChanged((newSet: LSPluginBaseInfo["settings"], oldSet: LSPluginBaseInfo["settings"]) => {
+    if (oldSet.accentColorUnderline === true
+      && newSet.accentColorUnderline === false)
+      removeProvideStyle(keyAccentColorUnderline)
+    else
+      if (oldSet.accentColorUnderline === false
+        && newSet.accentColorUnderline === true)
+        accentColorUnderline()
     if (oldSet.taskColor === true
       && newSet.taskColor === false)
       removeProvideStyle(keyTaskColor)
@@ -72,6 +80,19 @@ const main = async () => {
       else removeProvideStyle(keyLeftSidebarBackground)
   })
 } /* end_main */
+
+
+const keyAccentColorUnderline = "accentColorUnderline"
+const accentColorUnderline = () =>
+  logseq.provideStyle({
+    key: keyAccentColorUnderline,
+    style: String.raw`
+  body div#root div#main-content-container a.page-ref {
+  color: unset;
+  border-bottom:1.5px solid var(--lx-accent-11,var(--ls-link-text-color,hsl(var(--primary)/.8)));
+  }
+`,
+  })
 
 const keyTaskColor = "taskColor"
 const taskColor = () =>
@@ -163,6 +184,13 @@ const removeProvideStyle = (className: string) => {
 /* user setting */
 // https://logseq.github.io/plugins/types/SettingSchemaDesc.html
 const settingsTemplate = (): SettingSchemaDesc[] => [
+  {// アクセントカラーを、下線に対して適用する
+    key: keyAccentColorUnderline,
+    title: t("Apply accent color to underline"),
+    type: "boolean",
+    default: true,
+    description: "default: true",
+  },
   {
     key: keyFontFamilyUnset,
     title: t("Unset `font-family` in `html` For fast font loading"),

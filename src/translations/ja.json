@@ -7,5 +7,6 @@
     "Remove `Graph View` button": "グラフビューボタンを削除する",
     "Increase the gap between favorites and history a little": "お気に入りと履歴の間隔を少し広げる",
     "Adjust the position of favorites and history": "お気に入りと履歴の位置を調整する",
-    "Unset background color": "背景色を変更する"
+    "Unset background color": "背景色を変更する",
+    "Apply accent color to underline": "アクセントカラーを下線に適用する"
 }
