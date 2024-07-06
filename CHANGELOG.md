@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.5.0...v1.6.0) (2024-07-06)
+
+
+### Features
+
+* **Add:** Apply accent color to underline ([49caa5a](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/49caa5a19cde696ac4529454049ac00ee962e626))
+
 # [1.5.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.4.0...v1.5.0) (2024-2-2)
 
 
