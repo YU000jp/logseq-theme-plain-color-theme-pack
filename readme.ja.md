@@ -2,6 +2,9 @@
 
 このパックには、Logseqの標準ダークテーマをもとに、複数のカラーバリエーションが含まれています。
 
+> [!WARNING]
+>このプラグインはLogseq dbバージョンでは動作しません。
+
 <div align="right">
 
 [English](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack) | [日本語](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/blob/main/readme.ja.md) [![最新リリースバージョン](https://img.shields.io/github/v/release/YU000jp/logseq-theme-classic-dark-theme-pack)](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/releases)

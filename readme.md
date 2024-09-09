@@ -2,6 +2,9 @@
 
 This pack includes new color variations based on the Logseq default dark theme.
 
+> [!WARNING]
+This plugin does not work with Logseq db version.
+
 <div align="right">
 
 [English](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack) | [日本語](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/blob/main/readme.ja.md) 
