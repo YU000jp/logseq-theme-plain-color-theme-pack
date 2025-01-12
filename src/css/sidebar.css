@@ -1,0 +1,20 @@
+/* Compactスタイル適用 */
+#right-sidebar-container div.sidebar-item-list {
+             overflow: scroll;
+             display: flex;
+
+             &>div.sidebar-item {
+                          float: left;
+                          margin-right: 5px;
+
+                          &:not(.item-type-page-graph) {
+                                       width: fit-content;
+                          }
+
+                          min-width: 600px;
+                          max-width: 1000px;
+                          overflow: auto;
+                          height: fit-content;
+                          max-height: 100%;
+             }
+}

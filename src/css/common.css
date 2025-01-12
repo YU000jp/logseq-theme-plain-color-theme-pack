@@ -1,10 +1,14 @@
 .dark-theme,
 html[data-theme=dark] {
-  --ls-page-properties-background-color: #3e393d57
+  --ls-page-properties-background-color: #3e393d57;
 }
 
 body {
-  &>div#root>div>main {
+  &>#root>div>main {
+    #main-content-container div.breadcrumb {
+      font-size: 1.2em;
+    }
+
     & .rounded {
       border-radius: 0.4em;
     }
@@ -49,7 +53,11 @@ body {
       }
     }
 
-    &>div#app-container div {
+    &>#app-container div {
+      &.window-controls>button:not(:hover) {
+        opacity: 0.5;
+      }
+
       &#left-sidebar>div.left-sidebar-inner div {
         &.nav-content-item div.header {
           margin-left: -.8em;
@@ -87,7 +95,7 @@ body {
 
   }
 
-  &[data-page=home]>div#root>div>main div#main-content-container {
+  &[data-page=home]>#root>div>main #main-content-container {
     z-index: 0
   }
 }

@@ -1,5 +1,5 @@
 /* TODO colors */
-body>div#root>div>main>div#app-container a.block-marker {
+body>#root>div>main>#app-container a.block-marker {
 
     &:is(.NOW, .DOING) {
         color: #06C235;
