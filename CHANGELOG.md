@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.6.0...v1.7.0) (2025-01-12)
+
+
+### Features
+
+* **Add:** Additional style settings ([db1c941](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/commit/db1c941598550a467b1f6112496249c8444b2c18))
+
 # [1.6.0](https://github.com/YU000jp/logseq-theme-classic-dark-theme-pack/compare/v1.5.0...v1.6.0) (2024-07-06)
 
 
