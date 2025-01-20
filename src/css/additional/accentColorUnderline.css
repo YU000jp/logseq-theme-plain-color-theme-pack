@@ -1,0 +1,4 @@
+#main-content-container a.page-ref {
+             color: unset;
+             border-bottom: 1.5px solid var(--lx-accent-11, var(--ls-link-text-color, hsl(var(--primary)/.8)));
+}
